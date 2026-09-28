@@ -23,7 +23,7 @@ export function HamburgerMenu() {
             }`}
         />
         <span
-          className={`block h-0.75 rounded-3xl bg-[#475569] transition-all duration-300 origin-center ${open ? "w-5 -rotate-45 -translate-y-[6.5px]" : "w-2"
+          className={`block h-0.75 rounded-3xl bg-[#475569] transition-all duration-300 origin-center ${open ? "w-5 -rotate-45 translate-y-[-6.5px]" : "w-2"
             }`}
         />
       </div>

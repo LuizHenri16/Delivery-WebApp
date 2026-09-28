@@ -22,9 +22,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} bg-[#DBE4DD] h-full antialiased`}
     >
-      <body className="min-h-full flex px-10 flex-col">
+      <body className="min-h-full flex flex-col bg-white/90 px-10">
         <CartProvider>
           {children}
         </CartProvider>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { SlidersHorizontal } from "lucide-react";
+import { ArrowRight, SlidersHorizontal } from "lucide-react";
 import { ProductCard, type Product, type ProductCategory } from "./cardapio/ProductCard";
 import { useCart } from "@/src/context/CartContext";
 
@@ -101,11 +101,11 @@ export function Cardapio() {
 
                 <button
                     id="cardapio-filter-button"
-                    aria-label="Abrir filtro rápido"
-                    className="flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-200"
+                    aria-label="Abrir cardápio completo"
+                    className="flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-200 cursor-pointer"
                 >
-                    <SlidersHorizontal size={15} />
-                    Filtro rápido
+                    Ver cardápio completo
+                    <ArrowRight size={16} className="" />
                 </button>
             </div>
 

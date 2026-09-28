@@ -6,7 +6,7 @@ import { AccountButton } from "./header/AccountButton";
 
 export function Header() {
     return (
-        <header className="w-full bg-white border-b border-zinc-100 py-4">
+        <header className="w-full border-b border-zinc-100 py-4">
             <div className="flex items-center justify-between px-1 py-3">
                 <div className="flex items-center gap-3">
                     <HamburgerMenu />

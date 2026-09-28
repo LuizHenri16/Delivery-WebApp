@@ -24,7 +24,7 @@ export function CartDropdown({ onClose }: CartDropdownProps) {
     return (
         <>
             <div className="fixed inset-0 z-40" onClick={onClose} aria-hidden="true" />
-            <div role="dialog" aria-label="Sua sacola" className="absolute right-0 top-full mt-1 w-95 bg-[#F4F6F8]/90 border border-[#E2E8F0]/90 backdrop-blur-sm rounded-4xl shadow-2xl z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+            <div role="dialog" aria-label="Sua sacola" className="absolute -right-5 top-full mt-1 w-95 bg-[#F4F6F8]/90 border border-[#E2E8F0]/90 backdrop-blur-sm rounded-4xl shadow-2xl z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                 <div className="flex items-start justify-between px-5 pt-5 pb-4">
                     <div>
                         <h2 className="text-xl font-bold text-zinc-900">Sua Sacola</h2>
@@ -61,7 +61,7 @@ export function CartDropdown({ onClose }: CartDropdownProps) {
                                     />
                                 </div>
 
-                                <span className="flex items-center justify-center min-w-[32px] h-7 px-2 rounded-lg bg-amber-50 border border-amber-200 text-xs font-bold text-amber-700 shrink-0">
+                                <span className="flex items-center justify-center min-w-8 h-7 px-2 rounded-lg bg-amber-50 border border-amber-200 text-xs font-bold text-amber-700 shrink-0">
                                     {item.quantity}×
                                 </span>
 

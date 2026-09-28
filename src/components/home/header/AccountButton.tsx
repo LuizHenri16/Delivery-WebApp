@@ -11,12 +11,12 @@ export function AccountButton({ label = "Minha Conta" }: AccountButtonProps) {
       id="account-button"
       href="/conta"
       aria-label="Minha conta"
-      className="flex items-center gap-2 px-3 py-2 rounded-full border border-zinc-200 bg-white hover:bg-zinc-50 transition-colors duration-200 group"
+      className="flex items-center gap-1 px-3 py-2 group"
     >
-      <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-100">
+      <span className="flex items-center justify-center w-10 h-10">
         <User
-          size={13}
-          className="text-orange-500"
+          size={20}
+          className="text-zinc-500 group-hover:text-zinc-900 transition-colors duration-200"
         />
       </span>
       <span className="text-sm text-zinc-700 group-hover:text-zinc-900 transition-colors duration-200">
