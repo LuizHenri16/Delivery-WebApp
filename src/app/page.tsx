@@ -1,5 +1,5 @@
-import { Footer } from "../components/home/footer";
-import { Header } from "../components/home/header";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 import { Cardapio } from "../components/home/sections/cardapio/cardapio";
 import { Hero } from "../components/home/sections/hero/hero";
 

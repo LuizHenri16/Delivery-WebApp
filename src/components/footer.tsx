@@ -7,11 +7,11 @@ export function Footer() {
             <div className="py-4 flex items-center justify-between px-1">
                 <div className="flex items-center gap-2 text-sm">
                     <div className="">
-                            <img src="/logo.png" alt="Delivery logo" className="w-30" />
-                        </div>
+                        <img src="/logo.png" alt="Delivery logo" className="w-30" />
+                    </div>
                     <span className="text-zinc-300">•</span>
                     <span className="text-zinc-400 text-xs">
-                        Plataforma Delivery Direto &copy; {new Date().getFullYear()}
+                        Plataforma Delivery &copy; {new Date().getFullYear()}
                     </span>
                 </div>
                 <nav className="flex items-center gap-6">

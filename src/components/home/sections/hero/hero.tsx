@@ -42,7 +42,7 @@ export function Hero() {
                     <div className="flex flex-wrap items-center gap-4 mb-14">
                         <Link href="#cardapio" className="inline-flex items-center gap-2 px-8 py-4 bg-[#0f172a] text-white rounded-full font-semibold hover:bg-slate-800 transition-colors">
                             <UtensilsCrossed size={18} />
-                            Ver Cardápio Completo
+                            Ver Cardápio
                         </Link>
                     </div>
 

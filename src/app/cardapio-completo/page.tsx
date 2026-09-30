@@ -1,12 +1,12 @@
-import { Footer } from "@/src/components/home/footer";
-import { Header } from "@/src/components/home/header";
+import { Footer } from "@/src/components/footer";
+import { Header } from "@/src/components/header";
 import { Sidebar } from "@/src/components/cardapio/sidebar";
 import { ProductList } from "@/src/components/cardapio/productList";
 import { Pagination } from "@/src/components/cardapio/pagination";
 
 export default function CardapioCompletoPage() {
     return (
-        <div className="w-full min-h-screen bg-zinc-50 flex flex-col">
+        <div className="w-full min-h-screen bg-zinc-50 flex flex-col px-10">
             <Header />
             <main className="flex-1 w-full py-8 flex flex-col gap-6">
                 <div className="flex items-center justify-between">

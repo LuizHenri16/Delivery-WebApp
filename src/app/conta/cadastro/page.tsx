@@ -37,11 +37,11 @@ export default function CadastroPage() {
 
             <div className="relative z-10 w-full min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between max-w-7xl mx-auto lg:px-12">
                 <div className="hidden lg:flex flex-col gap-8 w-full lg:w-5/12 lg:-mt-10 lg:text-left lg:items-start">
-                    <div className="p-1 bg-gradient-to-r from-[#000000]/10 via-[#ffffff]/10 via-[#b1b1b1]/10 to-[#ffffff] backdrop-blur-lg rounded-3xl">
-                            <img src="/logo.png" alt="Delivery logo" className="w-60" />
+                    <div className="p-1 bg-linear-to-r from-[#000000]/10  via-[#b1b1b1]/10 to-[#ffffff] backdrop-blur-lg rounded-3xl">
+                        <img src="/logo.png" alt="Delivery logo" className="w-60" />
                     </div>
-                    
-                    <div className="flex flex-col gap-6"> 
+
+                    <div className="flex flex-col gap-6">
                         <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
                             Sabores autênticos à<br />sua porta.
                         </h1>
@@ -61,19 +61,16 @@ export default function CadastroPage() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full lg:max-w-[540px] bg-white lg:rounded-3xl p-6 py-10 lg:p-10 lg:shadow-2xl flex flex-col justify-center lg:justify-start gap-6 min-h-screen lg:min-h-0 lg:max-h-[calc(100vh-4rem)] lg:my-8 overflow-y-auto no-scrollbar">
+                <div className="w-full lg:max-w-135 bg-white lg:rounded-3xl p-6 py-10 lg:p-10 lg:shadow-2xl flex flex-col justify-center lg:justify-start gap-6 min-h-screen lg:min-h-0 lg:max-h-[calc(100vh-4rem)] lg:my-8 overflow-y-auto no-scrollbar">
                     <div className="flex flex-col gap-2">
-                        <span className="text-[10px] font-bold text-zinc-400 tracking-widest uppercase">Boas-vindas à Bella Delivery</span>
+                        <span className="text-[10px] font-bold text-zinc-400 tracking-widest uppercase">Boas-vindas à Delivery</span>
                         <h2 className="text-3xl font-extrabold text-zinc-900 tracking-tight">Crie sua conta</h2>
                         <p className="text-sm text-zinc-500 mt-1">
                             Informe apenas os dados básicos para identificação. Simples, rápido e descomplicado.
                         </p>
                     </div>
 
-                    {/* Form */}
                     <form className="flex flex-col gap-5 mt-2" onSubmit={(e) => e.preventDefault()}>
-
-                        {/* Nome */}
                         <Input
                             id="nome"
                             type="text"
@@ -81,8 +78,6 @@ export default function CadastroPage() {
                             placeholder="Ex: Gabriel Alencar de Souza"
                             iconLeft={<User size={16} />}
                         />
-
-                        {/* E-mail e CPF - 2 columns */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <Input
                                 id="email"
@@ -150,8 +145,6 @@ export default function CadastroPage() {
                                 </div>
                             </div>
                         </div>
-
-                        {/* Password rules */}
                         <div className="flex items-center gap-4 px-1">
                             <div className="flex items-center gap-1.5 text-[11px] text-zinc-600 font-medium">
                                 <CheckCircle2 size={12} className="text-zinc-400" />
@@ -163,7 +156,6 @@ export default function CadastroPage() {
                             </div>
                         </div>
 
-                        {/* Alert Box */}
                         <div className="bg-rose-50 rounded-2xl p-4 flex gap-3 items-start mt-2 border border-rose-100">
                             <div className="text-rose-500 shrink-0 mt-0.5">
                                 <Info size={18} />
@@ -174,7 +166,6 @@ export default function CadastroPage() {
                             </p>
                         </div>
 
-                        {/* Terms checkbox */}
                         <div className="flex items-start gap-2.5 mt-2">
                             <input
                                 type="checkbox"
@@ -185,15 +176,11 @@ export default function CadastroPage() {
                                 Li e concordo com os <span className="text-rose-500 hover:underline">Termos de Uso</span> e a <span className="text-rose-500 hover:underline">Política de Privacidade</span> da Bella Massa.
                             </label>
                         </div>
-
-                        {/* Submit Button */}
                         <Button type="submit" fullWidth className="mt-4 group gap-2">
                             Criar Minha Conta
                             <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                         </Button>
                     </form>
-
-                    {/* Footer link */}
                     <div className="text-center text-sm text-zinc-500 mt-2 pb-8 lg:pb-0">
                         Já tem uma conta?{" "}
                         <Link href="/conta/login" className="font-bold text-zinc-900 hover:underline">

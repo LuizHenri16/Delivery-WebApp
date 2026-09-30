@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { HamburgerMenu } from "./header/HamburgerMenu";
-import { CartButton } from "./header/CartButton";
-import { NotificationsButton } from "./header/NotificationsButton";
-import { AccountButton } from "./header/AccountButton";
+import { HamburgerMenu } from "./home/header/HamburgerMenu";
+import { CartButton } from "./home/header/CartButton";
+import { NotificationsButton } from "./home/header/NotificationsButton";
+import { AccountButton } from "./home/header/AccountButton";
 
 export function Header() {
     return (
