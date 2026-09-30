@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { ArrowRight, SlidersHorizontal } from "lucide-react";
-import { ProductCard, type Product, type ProductCategory } from "./cardapio/ProductCard";
+import { ProductCard, type Product, type ProductCategory } from "./ProductCard";
 import { useCart } from "@/src/context/CartContext";
+import Link from "next/link";
 
 // ─── Mock data ────────────────────────────────────────────────────────────────
 const ALL_PRODUCTS: Product[] = [
@@ -79,7 +80,6 @@ const FILTERS: { value: FilterValue; label: string; icon: string }[] = [
     { value: "combo", label: "Combos", icon: "🍱" },
 ];
 
-// ─── Component ─────────────────────────────────────────────────────────────────
 export function Cardapio() {
     const [activeFilter, setActiveFilter] = useState<FilterValue>("todos");
     const { addItem } = useCart();
@@ -99,14 +99,15 @@ export function Cardapio() {
                     </span>
                 </div>
 
-                <button
+                <Link
+                    href="/cardapio-completo"
                     id="cardapio-filter-button"
                     aria-label="Abrir cardápio completo"
                     className="flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-900 transition-colors duration-200 cursor-pointer"
                 >
                     Ver cardápio completo
                     <ArrowRight size={16} className="" />
-                </button>
+                </Link>
             </div>
 
             <div className="flex items-center gap-2 flex-wrap">

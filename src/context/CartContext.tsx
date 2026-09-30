@@ -8,15 +8,12 @@ import {
     type ReactNode,
 } from "react";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
 export interface CartItem {
     id: string;
     name: string;
     price: number;
     image: string;
     quantity: number;
-    /** e.g. "Tam. Grande (8f) · Borda Catupiry" */
     details?: string;
 }
 
@@ -29,8 +26,6 @@ interface CartContextValue {
     updateQuantity: (id: string, quantity: number) => void;
     clearCart: () => void;
 }
-
-// ─── Context ──────────────────────────────────────────────────────────────────
 
 const CartContext = createContext<CartContextValue | null>(null);
 
@@ -76,8 +71,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
         </CartContext.Provider>
     );
 }
-
-// ─── Hook ─────────────────────────────────────────────────────────────────────
 
 export function useCart(): CartContextValue {
     const ctx = useContext(CartContext);

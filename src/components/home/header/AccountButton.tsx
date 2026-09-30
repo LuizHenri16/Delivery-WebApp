@@ -9,7 +9,7 @@ export function AccountButton({ label = "Minha Conta" }: AccountButtonProps) {
   return (
     <Link
       id="account-button"
-      href="/conta"
+      href="/conta/login"
       aria-label="Minha conta"
       className="flex items-center gap-1 px-3 py-2 group"
     >

@@ -6,9 +6,9 @@ export function Footer() {
             <div className="border-b border-zinc-200 w-full"></div>
             <div className="py-4 flex items-center justify-between px-1">
                 <div className="flex items-center gap-2 text-sm">
-                    <span className="font-bold tracking-widest text-zinc-900 uppercase text-xs">
-                        Bella Massa
-                    </span>
+                    <div className="">
+                            <img src="/logo.png" alt="Delivery logo" className="w-30" />
+                        </div>
                     <span className="text-zinc-300">•</span>
                     <span className="text-zinc-400 text-xs">
                         Plataforma Delivery Direto &copy; {new Date().getFullYear()}
