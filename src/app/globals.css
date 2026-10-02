@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@theme {
+    --color-canvas: #fff8f7;
+    --color-canvas-soft: #faf6f5;
+    --color-surface: #ffffff;
+    --color-surface-dim: #f5f0ef;
+    --color-surface-muted: #f0eeee;
+
+    --color-line: #ece8e7;
+    --color-line-strong: #e4dfde;
+    --color-track: #e4d6d5;
+
+    --color-ink: #1e1412;
+    --color-ink-inverse: #1a1a1a;
+    --color-ink-strong: #2a1c1b;
+    --color-ink-subtle: #5a4a49;
+    --color-ink-hover: #2e201e;
+    --color-ink-muted: #6b5b5a;
+    --color-ink-soft: #8a7674;
+    --color-ink-faint: #a89694;
+    --color-ink-ghost: #b0a09e;
+    --color-ink-disabled: #c0b0ae;
+
+    --color-accent: #e8a038;
+    --color-accent-deep: #c97a10;
+    --color-accent-ink: #b57c00;
+    --color-accent-ink-strong: #b85c00;
+    --color-accent-soft: #fff3e0;
+    --color-accent-pale: #fff8e1;
+
+    --color-coral: #c55a37;
+    --color-coral-soft: #fff0eb;
+
+    --color-success: #008167;
+    --color-success-ink: #1a7a47;
+    --color-success-deep: #00614a;
+    --color-success-soft: #e8f5ee;
+    --color-success-muted: #e3f4f0;
+
+    --color-info: #3d6fc9;
+    --color-info-soft: #e8f0fe;
+
+    --color-forest: #2d4a3a;
+    --color-mint: #5ddb9a;
+
+    --shadow-card: 0 2px 8px rgba(133, 115, 114, 0.05);
+    --shadow-card-hover: 0 6px 18px rgba(133, 115, 114, 0.1);
+    --shadow-row: 0 2px 8px rgba(133, 115, 114, 0.04);
+    --shadow-panel: 0 4px 16px rgba(133, 115, 114, 0.07);
+}
