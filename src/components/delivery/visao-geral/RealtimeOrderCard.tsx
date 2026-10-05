@@ -68,7 +68,7 @@ export function RealtimeOrderCard({
                 />
             </div>
 
-            <div className="text-[0.9375rem] font-extrabold text-ink tabular-nums tracking-tight shrink-0 min-w-[72px] text-right">
+            <div className="text-[0.9375rem] font-extrabold text-ink tabular-nums tracking-tight shrink-0 min-w-18 text-right">
                 {value}
             </div>
         </Panel>
