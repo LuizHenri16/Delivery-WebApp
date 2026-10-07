@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
     { label: "Visão Geral", href: "/delivery/visao-geral" },
-    { label: "Gestão de Pedidos (Kanban)", href: "/delivery/gestao-de-pedidos" },
-    { label: "Cardápio & Preços", href: "/delivery/cardapio" },
-    { label: "Financeiro & Repasses", href: "/delivery/financeiro" },
-    { label: "Relatórios Fiscais", href: "/delivery/relatorios" },
+    { label: "Gestão de Pedidos", href: "/delivery/gestao-de-pedidos" },
+    { label: "Cardápio", href: "/delivery/cardapio" },
+    { label: "Financeiro", href: "/delivery/financeiro" },
+    { label: "Relatórios", href: "/delivery/relatorios" },
 ];
 
 export function HeaderNav() {
@@ -29,10 +29,9 @@ export function HeaderNav() {
                         id={`adm-nav-${item.href.split("/").pop()}`}
                         className={`
                             relative px-4 py-1 text-sm font-medium rounded-full transition-all duration-200
-                            ${
-                                isActive
-                                    ? "bg-orange-500 text-white shadow-sm"
-                                    : "text-zinc-500 hover:text-zinc-800 hover:bg-zinc-50"
+                            ${isActive
+                                ? "bg-orange-500 text-white shadow-sm"
+                                : "text-zinc-500 hover:text-zinc-800 hover:bg-zinc-50"
                             }
                         `}
                     >

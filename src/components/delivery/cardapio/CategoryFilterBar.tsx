@@ -11,7 +11,7 @@ export function CategoryFilterBar({
   activeCategory,
   onCategoryChange,
 }: CategoryFilterBarProps) {
-  // Derive categories dynamically from items
+
   const categoryCounts = items.reduce<Record<string, number>>((acc, item) => {
     acc[item.category] = (acc[item.category] ?? 0) + 1;
     return acc;
@@ -22,7 +22,6 @@ export function CategoryFilterBar({
 
   return (
     <div className="flex items-center gap-2 flex-wrap">
-      {/* "Todos" pill */}
       <button
         type="button"
         onClick={() => onCategoryChange("Todos")}
@@ -42,7 +41,6 @@ export function CategoryFilterBar({
         </span>
       </button>
 
-      {/* Dynamic category pills */}
       {categories.map(([category, count]) => (
         <button
           key={category}
