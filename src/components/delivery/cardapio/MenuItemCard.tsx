@@ -82,7 +82,7 @@ export function MenuItemCard({ item, isSelected, onSelect }: MenuItemCardProps) 
       </div>
 
       {/* Status badge */}
-      <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full whitespace-nowrap ${status.bg}`}>
+      <div className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-full whitespace-nowrap ${status.bg}`}>
         <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${status.dot}`} />
         <span className={`text-[0.6875rem] font-semibold ${status.text}`}>
           {status.label}

@@ -28,17 +28,6 @@ export function MenuItemList({ items, selectedItemId, onSelectItem }: MenuItemLi
 
   return (
     <div className="flex flex-col gap-4">
-      {/* ── Header ── */}
-      <div>
-        <h1 className="text-xl font-extrabold text-ink tracking-tight">
-          Itens do Menu
-        </h1>
-        <p className="text-[0.75rem] text-ink-faint mt-0.5">
-          Ordenado por volume de vendas e lucratividade
-        </p>
-      </div>
-
-      {/* ── Search + filter icon ── */}
       <div className="flex items-center gap-2">
         <div className="relative flex-1">
           <Search
@@ -61,14 +50,12 @@ export function MenuItemList({ items, selectedItemId, onSelectItem }: MenuItemLi
         </button>
       </div>
 
-      {/* ── Dynamic category filter ── */}
       <CategoryFilterBar
         items={items}
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}
       />
 
-      {/* ── Product list ── */}
       <div className="flex flex-col gap-2.5">
         {filtered.length === 0 ? (
           <div className="border-2 border-dashed border-line-strong rounded-2xl py-12 flex flex-col items-center gap-2">

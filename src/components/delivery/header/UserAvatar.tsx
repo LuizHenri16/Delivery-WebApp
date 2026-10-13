@@ -32,7 +32,7 @@ export function UserAvatar({
             >
                 {displayInitials}
             </div>
-            <div className="flex flex-col leading-tight">
+            <div className="hidden sm:flex flex-col leading-tight">
                 <span className="text-sm font-semibold text-zinc-800">{name}</span>
                 <span className="text-xs text-zinc-400">{role}</span>
             </div>

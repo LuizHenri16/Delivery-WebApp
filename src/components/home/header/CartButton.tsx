@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ShoppingCartIcon } from "lucide-react";
-import { useCart } from "../../../context/CartContext";
+import { useCart } from "../../../hooks/CartContext";
 import { CartDropdown } from "./CartDropdown";
 
 export function CartButton() {

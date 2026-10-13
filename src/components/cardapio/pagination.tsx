@@ -4,14 +4,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Pagination() {
     return (
-        <div className="flex items-center justify-between bg-white px-5 py-4 rounded-2xl w-full">
-            <div className="flex items-center gap-1.5 text-sm text-zinc-500 font-medium">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between bg-white px-5 py-4 rounded-2xl w-full">
+            <div className="flex items-center gap-1.5 text-sm text-zinc-500 font-medium flex-wrap">
                 <span className="text-zinc-900 font-bold">Página 1 de 3</span>
                 <span>/</span>
                 <span>Exibindo 9 de 28 pratos artesanais</span>
             </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 shrink-0 self-center sm:self-auto">
                 <button className="w-8 h-8 flex items-center justify-center rounded-full text-zinc-400 hover:text-zinc-600 hover:bg-zinc-50 transition-colors disabled:opacity-50" disabled>
                     <ChevronLeft size={16} />
                 </button>

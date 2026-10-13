@@ -6,7 +6,7 @@ import { Pagination } from "@/src/components/cardapio/pagination";
 
 export default function CardapioCompletoPage() {
     return (
-        <div className="w-full min-h-screen bg-zinc-50 flex flex-col px-10">
+        <div className="w-full min-h-screen bg-zinc-50 flex flex-col px-4 sm:px-6 lg:px-10">
             <Header />
             <main className="flex-1 w-full py-8 flex flex-col gap-6">
                 <div className="flex items-center justify-between">
@@ -15,7 +15,7 @@ export default function CardapioCompletoPage() {
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-8 items-start">
-                    <div className="hidden lg:block">
+                    <div className="w-full lg:w-auto">
                         <Sidebar />
                     </div>
                     <div className="flex-1 flex flex-col gap-6 min-w-0">

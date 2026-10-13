@@ -192,13 +192,20 @@ export function MenuDetailPanel({ item, onSave }: MenuDetailPanelProps) {
       {/* ── Save CTA ── */}
       <button
         type="button"
-        onClick={() => onSave?.(item)}
+        onClick={() =>
+          onSave?.({
+            ...item,
+            counterPrice,
+            deliveryPrice,
+            isAvailable,
+          })
+        }
         className="flex items-center justify-center gap-2 w-full bg-ink text-white text-[0.875rem] font-bold py-3.5 px-4 rounded-[0.875rem] border-none cursor-pointer transition-all hover:bg-ink-hover hover:-translate-y-px active:translate-y-0"
       >
         <Check size={16} />
         Salvar Alterações do Prato
       </button>
-
     </aside>
   );
 }
+

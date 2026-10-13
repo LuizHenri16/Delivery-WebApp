@@ -15,7 +15,7 @@ export function Hero() {
     return (
         <section className="flex flex-col gap-10 py-4">
 
-            <div id="banner" className="relative w-full rounded-4xl p-10 flex flex-col lg:flex-row items-center justify-between border border-orange-50/50 gap-10 overflow-hidden">
+            <div id="banner" className="relative w-full rounded-4xl p-6 sm:p-10 flex flex-col lg:flex-row items-center justify-between border border-orange-50/50 gap-8 lg:gap-10 overflow-hidden">
                 <div className="flex flex-col max-w-160 relative z-10">
                     <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute -top-8 left-80 text-orange-300 hidden md:block">
                         <path d="M2 58C25 20 60 5 95 15" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 4" strokeLinecap="round" />
@@ -63,7 +63,7 @@ export function Hero() {
                 </div>
 
                 {/* Right Column */}
-                <div className="w-8xl">
+                <div className="w-full max-w-md lg:w-8xl">
                     <Image width={1000} height={1000} className="w-full" src="/banner-image.webp" alt="Delivery" />
                 </div>
             </div>

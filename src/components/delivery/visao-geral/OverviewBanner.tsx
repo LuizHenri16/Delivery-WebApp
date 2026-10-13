@@ -10,7 +10,7 @@ export function OverviewBanner({
   onViewPerformance,
 }: OverviewBannerProps) {
   return (
-    <section className="relative bg-forest rounded-[1.25rem] px-8 py-7 flex items-center justify-between overflow-hidden min-h-[168px]">
+    <section className="relative bg-forest rounded-[1.25rem] px-5 py-6 sm:px-8 sm:py-7 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between overflow-hidden min-h-[168px]">
       {/* Decorative circle */}
       <div className="absolute -right-10 -top-10 w-56 h-56 rounded-full bg-white/[0.04] pointer-events-none" />
 
@@ -30,7 +30,7 @@ export function OverviewBanner({
       </div>
 
       {/* Decoration */}
-      <div className="relative z-10 flex flex-col items-center gap-3">
+      <div className="relative z-10 hidden sm:flex flex-col items-center gap-3">
         <span className="text-white/25">
           <Truck size={56} strokeWidth={1.2} />
         </span>

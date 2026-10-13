@@ -17,7 +17,7 @@ export function HeaderNav() {
     return (
         <nav
             aria-label="Navegação do painel administrativo"
-            className="flex items-center gap-2 px-10 pb-0 mt-6"
+            className="flex items-center gap-2 px-4 sm:px-6 lg:px-10 pb-0 mt-6 overflow-x-auto no-scrollbar"
         >
             {navItems.map((item) => {
                 const isActive =
@@ -28,7 +28,7 @@ export function HeaderNav() {
                         href={item.href}
                         id={`adm-nav-${item.href.split("/").pop()}`}
                         className={`
-                            relative px-4 py-1 text-sm font-medium rounded-full transition-all duration-200
+                            relative px-4 py-1 text-sm font-medium rounded-full transition-all duration-200 whitespace-nowrap shrink-0
                             ${isActive
                                 ? "bg-orange-500 text-white shadow-sm"
                                 : "text-zinc-500 hover:text-zinc-800 hover:bg-zinc-50"

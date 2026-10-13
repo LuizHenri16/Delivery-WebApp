@@ -20,7 +20,7 @@ export const TransactionDetailPanel: React.FC<TransactionDetailPanelProps> = ({
   const details = transaction.details;
 
   return (
-    <aside className="bg-white rounded-3xl p-6 border border-[#ece8e7] shadow-[0_2px_12px_rgba(133,115,114,0.06)] flex flex-col gap-6 sticky top-6">
+    <aside className="bg-white rounded-3xl p-6 border border-[#ece8e7] shadow-[0_2px_12px_rgba(133,115,114,0.06)] flex flex-col gap-6 lg:sticky lg:top-6">
       {/* Header Info */}
       <div className="flex items-center gap-3.5 pb-4 border-b border-gray-100">
         <div className="w-12 h-12 rounded-2xl bg-amber-100/80 text-amber-600 flex items-center justify-center shrink-0">

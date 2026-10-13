@@ -4,20 +4,18 @@ import React, { useState } from 'react';
 import { FiscalCardList } from '@/src/components/delivery/relatorios/FiscalCardList';
 import { FiscalDocumentList } from '@/src/components/delivery/relatorios/FiscalDocumentList';
 import { FiscalDetailPanel } from '@/src/components/delivery/relatorios/FiscalDetailPanel';
-import {
-  MOCK_FISCAL_METRICS,
-  MOCK_FISCAL_DOCUMENTS,
-  FiscalDocument,
-} from '@/src/components/delivery/relatorios/types';
+import { useData } from '@/src/hooks/DataContext';
 import { Download, ChevronDown } from 'lucide-react';
+import type { FiscalDocument } from '@/src/components/delivery/relatorios/types';
 
 export default function RelatoriosPage() {
+  const { fiscalMetrics, fiscalDocuments } = useData();
   const [selectedDocument, setSelectedDocument] = useState<FiscalDocument>(
-    MOCK_FISCAL_DOCUMENTS[0]
+    fiscalDocuments[0]
   );
 
   return (
-    <div className="px-10 py-6 bg-white/90 min-h-screen flex flex-col gap-6">
+    <div className="px-4 sm:px-6 lg:px-10 py-8 bg-white/90 min-h-screen flex flex-col gap-6">
       {/* Top Controls Bar */}
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -37,12 +35,12 @@ export default function RelatoriosPage() {
       </div>
 
       {/* Summary Cards Row */}
-      <FiscalCardList metrics={MOCK_FISCAL_METRICS} />
+      <FiscalCardList metrics={fiscalMetrics} />
 
       {/* Main Grid Section */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6 items-start mt-2">
         <FiscalDocumentList
-          documents={MOCK_FISCAL_DOCUMENTS}
+          documents={fiscalDocuments}
           selectedId={selectedDocument?.id || ''}
           onSelectDocument={setSelectedDocument}
         />

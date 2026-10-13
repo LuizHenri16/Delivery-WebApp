@@ -50,7 +50,7 @@ export const FiscalCard: React.FC<FiscalCardProps> = ({
         </div>
       </div>
 
-      <div className="flex items-center gap-6 shrink-0">
+      <div className="flex items-center gap-3 sm:gap-6 shrink-0">
         <div className="text-right hidden md:block">
           <span className="text-[0.6875rem] font-bold tracking-wider text-gray-400 uppercase block">
             {document.chave}
@@ -60,7 +60,7 @@ export const FiscalCard: React.FC<FiscalCardProps> = ({
           </span>
         </div>
 
-        <div className="w-36 flex justify-start">
+        <div className="hidden sm:flex w-36 justify-start">
           {document.status === 'Autorizada SEFAZ' ? (
             <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[0.7rem] font-bold flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />

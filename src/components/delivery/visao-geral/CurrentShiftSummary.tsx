@@ -3,42 +3,12 @@ import { BarChart2, FileText } from "lucide-react";
 import { Panel } from "@/src/components/ui/Panel";
 import { IconTile } from "@/src/components/ui/IconTile";
 import { GoalProgress } from "./GoalProgress";
-import { TopItemsList, type TopItem } from "./TopItemsList";
-import { DelivererList, type Deliverer } from "./DelivererList";
-
-const GOAL = {
-    label: "Meta do Turno",
-    percent: 82,
-    caption: "R$ 3.840,00",
-    target: "Alvo: R$ 4.500,00",
-};
-
-const TOP_ITEMS: TopItem[] = [
-    { rank: 1, name: "Pizza Calabresa Especial", qty: "24 un", revenue: "R$ 1.029,60" },
-    { rank: 2, name: "Hambúrguer Bella Bacon", qty: "16 un", revenue: "R$ 478,40" },
-    { rank: 3, name: "Frango com Catupiry", qty: "12 un", revenue: "R$ 562,80" },
-];
-
-const DELIVERERS: Deliverer[] = [
-    {
-        initials: "CE",
-        name: "Carlos Eduardo",
-        deliveries: "14 entregas",
-        avgTime: "22 min méd",
-        status: "Retornando da rota",
-        tone: "positive",
-    },
-    {
-        initials: "MS",
-        name: "Marcos Souza",
-        deliveries: "12 entregas",
-        avgTime: "26 min méd",
-        status: "Em entrega (#1048)",
-        tone: "warning",
-    },
-];
+import { TopItemsList } from "./TopItemsList";
+import { DelivererList } from "./DelivererList";
+import { SHIFT_DATA } from "@/src/data";
 
 export function CurrentShiftSummary() {
+    const { goal, topItems, deliverers } = SHIFT_DATA;
     return (
         <Panel as="aside" shadow="panel" className="p-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
@@ -57,18 +27,18 @@ export function CurrentShiftSummary() {
 
             <hr className="border-surface-muted" />
 
-            <GoalProgress {...GOAL} />
+            <GoalProgress {...goal} />
 
             <hr className="border-surface-muted" />
 
-            <TopItemsList title="Mais Vendidos Hoje" items={TOP_ITEMS} />
+            <TopItemsList title="Mais Vendidos Hoje" items={topItems} />
 
             <hr className="border-surface-muted" />
 
             <DelivererList
                 title="Entregadores Ativos"
                 summary="4 na rota"
-                deliverers={DELIVERERS}
+                deliverers={deliverers}
             />
 
             <button

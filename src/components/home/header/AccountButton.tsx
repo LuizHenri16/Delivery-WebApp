@@ -19,7 +19,7 @@ export function AccountButton({ label = "Minha Conta" }: AccountButtonProps) {
           className="text-zinc-500 group-hover:text-zinc-900 transition-colors duration-200"
         />
       </span>
-      <span className="text-sm text-zinc-700 group-hover:text-zinc-900 transition-colors duration-200">
+      <span className="hidden sm:inline text-sm text-zinc-700 group-hover:text-zinc-900 transition-colors duration-200">
         {label}
       </span>
     </Link>

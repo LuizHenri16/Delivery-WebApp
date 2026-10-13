@@ -100,7 +100,7 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
         </div>
       </div>
 
-      <div className="flex items-center gap-6 shrink-0">
+      <div className="flex items-center gap-3 sm:gap-6 shrink-0">
         <div className="text-right hidden sm:block">
           <span className="text-[0.6875rem] font-bold tracking-wider text-gray-400 uppercase block">
             {transaction.code}
@@ -110,7 +110,7 @@ export const TransactionCard: React.FC<TransactionCardProps> = ({
           </span>
         </div>
 
-        <div className="w-32 flex justify-start">{getStatusBadge()}</div>
+        <div className="hidden sm:flex w-32 justify-start">{getStatusBadge()}</div>
 
         <div
           className={`font-extrabold text-base text-right min-w-[100px] ${

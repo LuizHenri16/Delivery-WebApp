@@ -3,22 +3,22 @@ import type { KanbanOrder } from "./types";
 
 interface OrderDetailPanelProps {
   order: KanbanOrder;
+  onAdvanceStatus?: (orderId: string) => void;
 }
 
 const NEXT_STATUS_LABEL: Record<string, string> = {
   Novos: "Enviar para o Forno",
   "No Forno": "Marcar como Pronto",
   Embalando: "Despachar Pedido",
-  "Em Trânsito": "Confirmar Entrega",
+  "Em Trânsito": "Entregue / Concluído",
 };
 
-export function OrderDetailPanel({ order }: OrderDetailPanelProps) {
+export function OrderDetailPanel({ order, onAdvanceStatus }: OrderDetailPanelProps) {
   const nextLabel = NEXT_STATUS_LABEL[order.status];
 
   const newLocal = "text-lg font-extrabold text-[#1e1412] tracking-tight";
   return (
     <aside className="bg-white/90 border border-line/50 rounded-3xl p-5 shadow-[0_4px_20px_rgba(133,115,114,0.08)] flex flex-col gap-5">
-
       {/* ── Header ── */}
       <div className="flex items-start gap-3">
         <div className="w-12 h-12 rounded-xl bg-coral-soft text-coral flex items-center justify-center shrink-0">
@@ -155,11 +155,14 @@ export function OrderDetailPanel({ order }: OrderDetailPanelProps) {
         </span>
       </div>
 
-      <button type="button" className="flex items-center justify-center gap-2 w-full bg-ink text-white text-[0.875rem] font-bold py-3.5 px-4 rounded-[0.875rem] border-none cursor-pointer transition-all hover:bg-ink-hover hover:-translate-y-px active:translate-y-0">
+      <button
+        type="button"
+        onClick={() => onAdvanceStatus?.(order.id)}
+        className="flex items-center justify-center gap-2 w-full bg-ink text-white text-[0.875rem] font-bold py-3.5 px-4 rounded-[0.875rem] border-none cursor-pointer transition-all hover:bg-ink-hover hover:-translate-y-px active:translate-y-0"
+      >
         {nextLabel}
         <ArrowRight size={16} />
       </button>
-
     </aside>
   );
 }

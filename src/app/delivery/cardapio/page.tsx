@@ -4,19 +4,20 @@ import { useState } from "react";
 import { Plus } from "lucide-react";
 import { MenuItemList } from "@/src/components/delivery/cardapio/MenuItemList";
 import { MenuDetailPanel } from "@/src/components/delivery/cardapio/MenuDetailPanel";
-import { MOCK_MENU_ITEMS } from "@/src/components/delivery/cardapio/types";
-import type { MenuItem } from "@/src/components/delivery/cardapio/types";
+import { useData } from "@/src/hooks/DataContext";
 
 export default function CardapioPage() {
-  const [selectedItem, setSelectedItem] = useState<MenuItem>(MOCK_MENU_ITEMS[0]);
+  const { menuItems, updateMenuItem } = useData();
+  const [selectedItemId, setSelectedItemId] = useState<string>(menuItems[0].id);
+
+  const selectedItem = menuItems.find((i) => i.id === selectedItemId) || menuItems[0];
 
   return (
-    <div className="px-10 py-6 bg-white/90 min-h-screen">
-
-      <div className="flex items-center justify-between mb-6">
+    <div className="px-4 sm:px-6 lg:px-10 py-8 bg-white/90 min-h-screen">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-6">
         <div>
           <h1 className="text-xl font-extrabold text-ink tracking-tight">
-            Cardápio &amp; Preços
+            Cardápio
           </h1>
           <p className="text-[0.75rem] text-ink-faint mt-0.5">
             Gerencie produtos, preços e disponibilidade em tempo real
@@ -31,22 +32,24 @@ export default function CardapioPage() {
         </button>
       </div>
 
-      <div className="grid grid-cols-[1fr_340px] gap-6 items-start">
-
+      <div className="grid grid-cols-1 xl:grid-cols-[1fr_340px] gap-6 items-start">
         <MenuItemList
-          items={MOCK_MENU_ITEMS}
-          selectedItemId={selectedItem.id}
-          onSelectItem={setSelectedItem}
+          items={menuItems}
+          selectedItemId={selectedItem?.id || null}
+          onSelectItem={(item) => setSelectedItemId(item.id)}
         />
 
-        <div className="sticky top-6">
-          <MenuDetailPanel
-            key={selectedItem.id}
-            item={selectedItem}
-          />
+        <div className="xl:sticky xl:top-6">
+          {selectedItem && (
+            <MenuDetailPanel
+              key={selectedItem.id}
+              item={selectedItem}
+              onSave={updateMenuItem}
+            />
+          )}
         </div>
-
       </div>
     </div>
   );
 }
+

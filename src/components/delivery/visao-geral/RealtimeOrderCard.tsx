@@ -36,27 +36,33 @@ export function RealtimeOrderCard({
             as="article"
             radius="md"
             shadow="row"
-            className={`flex items-center gap-4 px-5 py-4 cursor-pointer transition-all hover:bg-yellow-50/30 hover:border-yellow-300 ${isDone ? "opacity-75" : ""}`}
+            className={`flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4 px-4 sm:px-5 py-4 cursor-pointer transition-all hover:bg-yellow-50/30 hover:border-yellow-300 ${isDone ? "opacity-75" : ""}`}
         >
-            <IconTile tone={ORDER_STATUS_ICON_TONE[status]} size="lg">
-                {isDone ? <CheckCircle size={20} /> : TYPE_ICON[type]}
-            </IconTile>
+            <div className="flex items-center gap-4 min-w-0 w-full sm:flex-1">
+                <IconTile tone={ORDER_STATUS_ICON_TONE[status]} size="lg">
+                    {isDone ? <CheckCircle size={20} /> : TYPE_ICON[type]}
+                </IconTile>
 
-            <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-0.5">
-                    <span className="text-sm font-bold text-ink">{id}</span>
-                    {note && (
-                        <Badge tone="info" size="sm">
-                            {note}
-                        </Badge>
-                    )}
+                <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-0.5">
+                        <span className="text-sm font-bold text-ink">{id}</span>
+                        {note && (
+                            <Badge tone="info" size="sm">
+                                {note}
+                            </Badge>
+                        )}
+                    </div>
+                    <p className="text-[0.75rem] text-ink-soft truncate">
+                        {customerName} · {items}
+                    </p>
                 </div>
-                <p className="text-[0.75rem] text-ink-soft truncate">
-                    {customerName} · {items}
-                </p>
+
+                <div className="text-[0.9375rem] font-extrabold text-ink tabular-nums tracking-tight shrink-0 sm:hidden">
+                    {value}
+                </div>
             </div>
 
-            <div className="flex flex-row gap-6 items-center text-center shrink-0">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 sm:gap-6 shrink-0">
                 <span className="text-[0.6875rem] text-ink-faint">
                     {time} · {type}
                 </span>
@@ -68,7 +74,7 @@ export function RealtimeOrderCard({
                 />
             </div>
 
-            <div className="text-[0.9375rem] font-extrabold text-ink tabular-nums tracking-tight shrink-0 min-w-18 text-right">
+            <div className="hidden sm:block text-[0.9375rem] font-extrabold text-ink tabular-nums tracking-tight shrink-0 min-w-18 text-right">
                 {value}
             </div>
         </Panel>

@@ -5,15 +5,13 @@ import { useState } from "react";
 import { Panel } from "@/src/components/ui/Panel";
 import { StatusDot } from "@/src/components/ui/StatusDot";
 import { cx } from "@/src/lib/cx";
+import { ORDERS_CHART } from "@/src/data";
 
 type ChartPeriod = "hoje" | "semana";
 
-const HOURS  = ["11h","12h","13h","14h","17h","18h","19h","20h","21h","22h","23h"];
-const VALUES = [2, 5, 4, 3, 6, 8, 12, 18, 11, 7, 4];
-const PEAK_INDEX = 7; // 20h
-
 export function OrdersChart() {
   const [period, setPeriod] = useState<ChartPeriod>("hoje");
+  const { hours: HOURS, values: VALUES, peakIndex: PEAK_INDEX } = ORDERS_CHART;
   const max = Math.max(...VALUES);
 
   return (

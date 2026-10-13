@@ -1,0 +1,762 @@
+{
+  "home": {
+    "products": [
+      {
+        "id": "pizza-calabresa",
+        "name": "Pizza Calabresa Artesanal",
+        "price": 42.9,
+        "description": "Massa de longa fermentação, molho rústico de tomate pelado, calabresa...",
+        "image": "/product-pizza.png",
+        "category": "pizza",
+        "badge": { "label": "🔥 Mais Pedida", "color": "orange" },
+        "tag": { "label": "Forno a Lenha", "color": "teal" }
+      },
+      {
+        "id": "burger-bella-bacon",
+        "name": "Hambúrguer Bella Bacon",
+        "price": 29.9,
+        "description": "Blend nobre grelhado no fogo, cheddar cremoso derretido, tiras de...",
+        "image": "/product-burger.png",
+        "category": "hamburguer",
+        "badge": { "label": "180g Gourmet", "color": "zinc" },
+        "tag": { "label": "Receita Exclusiva", "color": "amber" }
+      },
+      {
+        "id": "frango-catupiry",
+        "name": "Frango c/ Catupiry",
+        "price": 46.9,
+        "description": "Peito de frango desfiado temperado com ervas frescas, camada de catupiry original...",
+        "image": "/product-pizza.png",
+        "category": "pizza",
+        "badge": { "label": "🧀 Catupiry Original", "color": "yellow" },
+        "tag": { "label": "Clássico", "color": "teal" }
+      },
+      {
+        "id": "combo-bella-artesanal",
+        "name": "Combo Bella Artesanal",
+        "price": 39.9,
+        "description": "Hambúrguer Bella Bacon + Porção de batatas rústicas crocantes com alecrim...",
+        "image": "/product-combo.png",
+        "category": "combo",
+        "badge": { "label": "⬆ Combo Completo", "color": "orange" },
+        "tag": { "label": "Mais Econômico", "color": "orange" }
+      },
+      {
+        "id": "margherita-bella",
+        "name": "Margherita Bella Tradizionale",
+        "price": 44.9,
+        "description": "Mussarela de búfala derretida, fatias de tomate caqui maduro, azeite de oliva...",
+        "image": "/product-margherita.png",
+        "category": "pizza",
+        "badge": { "label": "🌿 Manjericão Fresco", "color": "green" },
+        "tag": { "label": "Vegetariano", "color": "green" }
+      },
+      {
+        "id": "double-smash",
+        "name": "Double Smash Bella Cheese",
+        "price": 32.9,
+        "description": "Dois ultra-smashes com crosta perfeita, camada dupla de queijo prato...",
+        "image": "/product-burger.png",
+        "category": "hamburguer",
+        "badge": { "label": "Super Crocante", "color": "zinc" },
+        "tag": { "label": "Mais Vendido", "color": "amber" }
+      }
+    ],
+    "filters": [
+      { "value": "todos", "label": "Todos", "icon": "✨" },
+      { "value": "pizza", "label": "Pizzas", "icon": "🍕" },
+      { "value": "hamburguer", "label": "Hambúrgueres", "icon": "🍔" },
+      { "value": "combo", "label": "Combos", "icon": "🍱" }
+    ]
+  },
+  "sidebar": {
+    "categories": [
+      { "label": "Todos os itens", "count": 28, "active": true },
+      { "label": "Pizzas Artesanais", "count": 12 },
+      { "label": "Hambúrgueres Gourmet", "count": 6 },
+      { "label": "Combos & Ofertas", "count": 4 },
+      { "label": "Bebidas Geladas", "count": 4 },
+      { "label": "Sobremesas da Casa", "count": 2 }
+    ],
+    "priceRange": {
+      "label": "Até R$ 90,00",
+      "min": "R$ 15",
+      "max": "R$ 90",
+      "chips": [
+        { "label": "Até R$ 35", "active": true },
+        { "label": "R$ 35 a R$ 60" },
+        { "label": "Todos os preços" }
+      ]
+    },
+    "preferences": [
+      { "label": "Vegetarianos" },
+      { "label": "Sem Lactose" },
+      { "label": "Destaque do Chef", "checked": true, "tone": "orange" },
+      { "label": "Promoção do Dia" }
+    ],
+    "deliveryTimes": [
+      { "label": "Até 30 min", "checked": false, "icon": "zap" },
+      { "label": "30 a 45 min", "checked": true, "icon": "clock" }
+    ]
+  },
+  "menu": {
+    "items": [
+      {
+        "id": "1",
+        "code": "#PZ-1048",
+        "name": "Pizza Calabresa Artesanal",
+        "description": "Massa de fermentação lenta (48h), molho de tomate pelado San Marzano, fatias crocantes de calabresa especial e cebola caramelizada.",
+        "category": "Pizzas",
+        "costPrice": 14.2,
+        "counterPrice": 39.9,
+        "deliveryPrice": 42.9,
+        "grossMargin": 66.9,
+        "status": "Ativo no Cardápio",
+        "isAvailable": true,
+        "isBestSeller": true,
+        "additionals": [
+          { "name": "Borda Catupiry Original", "price": "+ R$8,00" },
+          { "name": "Borda Cheddar Cremoso", "price": "+ R$8,00" },
+          { "name": "Massa Integral 100%", "price": "+ R$4,00" }
+        ]
+      },
+      {
+        "id": "2",
+        "code": "#BG-0182",
+        "name": "Hambúrguer Bella Bacon 180g",
+        "description": "Pão brioche artesanal, blend especial 180g, queijo cheddar, bacon crocante e molho especial da casa.",
+        "category": "Hambúrgueres",
+        "costPrice": 9.8,
+        "counterPrice": 28.0,
+        "deliveryPrice": 29.9,
+        "grossMargin": 67.2,
+        "status": "Ativo no Cardápio",
+        "isAvailable": true,
+        "additionals": [
+          { "name": "Ovo Frito", "price": "+ R$3,00" },
+          { "name": "Bacon Extra", "price": "+ R$5,00" }
+        ]
+      },
+      {
+        "id": "3",
+        "code": "#PZ-1052",
+        "name": "Pizza Frango com Catupiry Original",
+        "description": "Frango desfiado temperado, catupiry original, molho de tomate artesanal e orégano fresco.",
+        "category": "Pizzas",
+        "costPrice": 16.5,
+        "counterPrice": 44.0,
+        "deliveryPrice": 46.9,
+        "grossMargin": 64.8,
+        "status": "Ativo no Cardápio",
+        "isAvailable": true,
+        "additionals": [
+          { "name": "Catupiry Extra", "price": "+ R$4,00" },
+          { "name": "Borda Integral", "price": "+ R$4,00" }
+        ]
+      },
+      {
+        "id": "4",
+        "code": "#CB-0021",
+        "name": "Combo Bella Clássico (Pizza M + Refri)",
+        "description": "Uma pizza média à escolha + refrigerante lata 350ml.",
+        "category": "Combos",
+        "costPrice": 15.0,
+        "counterPrice": 39.9,
+        "deliveryPrice": 39.9,
+        "grossMargin": 62.4,
+        "status": "Destaque Promoção",
+        "isAvailable": true,
+        "promotionalNote": "Preço Promocional",
+        "additionals": []
+      },
+      {
+        "id": "5",
+        "code": "#SB-0044",
+        "name": "Açaí Especial na Taça 500ml",
+        "description": "Açaí cremoso com granola, banana, leite condensado e morango.",
+        "category": "Sobremesas",
+        "costPrice": 6.5,
+        "counterPrice": 18.9,
+        "deliveryPrice": 18.9,
+        "grossMargin": 65.6,
+        "status": "Pausado (Sem Estoque)",
+        "isAvailable": false,
+        "missingIngredient": "Morango",
+        "additionals": [
+          { "name": "Granola Extra", "price": "+ R$2,00" }
+        ]
+      },
+      {
+        "id": "6",
+        "code": "#BD-0088",
+        "name": "Coca-Cola Lata 350ml",
+        "description": "Coca-Cola lata bem gelada.",
+        "category": "Bebidas",
+        "costPrice": 2.9,
+        "counterPrice": 6.0,
+        "deliveryPrice": 6.0,
+        "grossMargin": 51.6,
+        "status": "Ativo no Cardápio",
+        "isAvailable": true,
+        "additionals": []
+      }
+    ]
+  },
+  "orders": {
+    "kanbanColumns": [
+      { "status": "Novos", "color": "text-[#1a7a47]", "dot": "bg-[#008167]", "count": 2 },
+      { "status": "No Forno", "color": "text-[#b57c00]", "dot": "bg-[#e8a038]", "count": 3 },
+      { "status": "Embalando", "color": "text-[#3d6fc9]", "dot": "bg-[#3d6fc9]", "count": 1 },
+      { "status": "Em Trânsito", "color": "text-[#7b42c9]", "dot": "bg-[#7b42c9]", "count": 2 }
+    ],
+    "kanbanOrders": [
+      {
+        "id": "1048",
+        "number": "#1048",
+        "customerName": "João Silva",
+        "customerAddress": "Delivery · R. das Flores",
+        "type": "Delivery",
+        "items": [
+          { "qty": 2, "name": "Pizza Calabresa Especial (G)", "price": "R$79,80" },
+          { "qty": 1, "name": "Refrigerante Coca-Cola 2L", "price": "R$10,00" }
+        ],
+        "total": "R$ 89,80",
+        "status": "Novos",
+        "timeAgo": "Há 2 min",
+        "isPriority": true,
+        "cod": "BM-2391-2329",
+        "origin": "Bella Massa – Forno Central",
+        "originSub": "Estação de Pizzas · Forno Lastro 01",
+        "deliveryFee": "Grátis",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:42", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "Aguardando", "status": "active" },
+          { "label": "Em Rota de Entrega", "time": "Pendente", "status": "pending" }
+        ]
+      },
+      {
+        "id": "1049",
+        "number": "#1049",
+        "customerName": "Luiza Miranda",
+        "customerAddress": "Retirada Balcão",
+        "type": "Retirada Balcão",
+        "items": [
+          { "qty": 1, "name": "Pizza Marguerita", "price": "R$42,90" }
+        ],
+        "total": "R$ 42,90",
+        "status": "Novos",
+        "timeAgo": "Há 1 min",
+        "cod": "BM-2391-2330",
+        "origin": "Bella Massa – Forno Central",
+        "originSub": "Estação de Pizzas · Forno Lastro 02",
+        "deliveryFee": "—",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:43", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "Aguardando", "status": "pending" },
+          { "label": "Retirada Balcão", "time": "Pendente", "status": "pending" }
+        ]
+      },
+      {
+        "id": "1047",
+        "number": "#1047",
+        "customerName": "Maria Santos",
+        "customerAddress": "Salão · Mesa 04",
+        "type": "Salão",
+        "tableInfo": "Mesa 04",
+        "items": [
+          { "qty": 1, "name": "Bella Bacon Burger", "price": "R$52,90" },
+          { "qty": 1, "name": "Batata Rústica", "price": "R$10,00" }
+        ],
+        "total": "R$ 62,90",
+        "status": "No Forno",
+        "timeAgo": "8 min",
+        "cod": "BM-2391-2327",
+        "origin": "Bella Massa – Cozinha Quente",
+        "originSub": "Estação Grill · Chapa 02",
+        "deliveryFee": "—",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:35", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "19:36", "status": "active" },
+          { "label": "Entrega na Mesa", "time": "Pendente", "status": "pending" }
+        ]
+      },
+      {
+        "id": "1045",
+        "number": "#1045",
+        "customerName": "Fernando Dias",
+        "customerAddress": "Delivery",
+        "type": "Delivery",
+        "items": [
+          { "qty": 1, "name": "Frango c/ Catupiry", "price": "R$58,00" },
+          { "qty": 1, "name": "Quatro Queijos", "price": "R$38,00" }
+        ],
+        "total": "R$ 96,00",
+        "status": "No Forno",
+        "timeAgo": "3 min",
+        "cod": "BM-2391-2325",
+        "origin": "Bella Massa – Forno Central",
+        "originSub": "Estação de Pizzas · Forno Lastro 01",
+        "deliveryFee": "R$5,00",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:40", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "19:42", "status": "active" },
+          { "label": "Em Rota de Entrega", "time": "Pendente", "status": "pending" }
+        ]
+      },
+      {
+        "id": "1044",
+        "number": "#1044",
+        "customerName": "Rafael Costa",
+        "customerAddress": "Balcão Pass",
+        "type": "Retirada Balcão",
+        "items": [
+          { "qty": 1, "name": "Pizza Portugues", "price": "R$48,00" },
+          { "qty": 1, "name": "Suco Laranja 500ml", "price": "R$6,00" }
+        ],
+        "total": "R$ 54,00",
+        "status": "Embalando",
+        "timeAgo": "Aguardando",
+        "cod": "BM-2391-2324",
+        "origin": "Bella Massa – Forno Central",
+        "originSub": "Estação de Pizzas · Forno Lastro 03",
+        "deliveryFee": "—",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:30", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "19:32", "status": "done" },
+          { "label": "Embalando", "time": "19:42", "status": "active" }
+        ]
+      },
+      {
+        "id": "1046",
+        "number": "#1046",
+        "customerName": "Pedro Lima",
+        "customerAddress": "Av. Brasil, 890",
+        "type": "Delivery",
+        "items": [
+          { "qty": 1, "name": "Pizza Quatro Queijos", "price": "R$45,00" }
+        ],
+        "total": "R$ 45,00",
+        "status": "Em Trânsito",
+        "timeAgo": "Previsão: 15 min",
+        "cod": "BM-2391-2326",
+        "origin": "Bella Massa – Forno Central",
+        "originSub": "Estação de Pizzas · Forno Lastro 01",
+        "motoboy": "Carlos Eduardo",
+        "motoboyBag": "Bag Térmica #04",
+        "deliveryFee": "Grátis",
+        "estimatedTime": "15 min",
+        "timeline": [
+          { "label": "Pedido Confirmado", "time": "19:28", "status": "done" },
+          { "label": "No Forno / Cocção", "time": "19:30", "status": "done" },
+          { "label": "Em Rota de Entrega", "time": "19:42", "status": "active" }
+        ]
+      }
+    ],
+    "realtimeOrders": [
+      {
+        "id": "Pedido #1048",
+        "customerName": "Carlos Pereira",
+        "items": "1x Pizza Calabresa, 1x Guaraná 2L",
+        "time": "20:42",
+        "type": "Delivery",
+        "status": "Em entrega",
+        "value": "R$ 89,80"
+      },
+      {
+        "id": "Pedido #1047",
+        "customerName": "Juliana Mendes",
+        "items": "1x Pizza Marguerita Família",
+        "time": "20:38",
+        "type": "Salão",
+        "status": "Preparando",
+        "value": "R$ 62,90",
+        "note": "Mesa 04 (Salão)"
+      },
+      {
+        "id": "Pedido #1046",
+        "customerName": "Roberto Lima",
+        "items": "2x Smash Burger Especial",
+        "time": "20:45",
+        "type": "Delivery",
+        "status": "Novo",
+        "value": "R$ 45,00",
+        "note": "Novo"
+      },
+      {
+        "id": "Pedido #1045",
+        "customerName": "Fernanda Souza",
+        "items": "1x Pizza Quatro Queijos",
+        "time": "20:20",
+        "type": "Balcão / Retirada",
+        "status": "Concluído",
+        "value": "R$ 72,00",
+        "note": "Balcão / Retirada"
+      }
+    ]
+  },
+  "overview": {
+    "metrics": [
+      {
+        "label": "Faturamento Hoje",
+        "sublabel": "vs. ontem R$ 3.243",
+        "value": "R$ 3.840,00",
+        "badge": "+18.4%",
+        "badgeVariant": "positive"
+      },
+      {
+        "label": "Ticket Médio",
+        "sublabel": "Meta diária: R$ 60,00",
+        "value": "R$ 68,50",
+        "badge": "Acima",
+        "badgeVariant": "positive"
+      },
+      {
+        "label": "Pedidos Totais",
+        "value": "56",
+        "badge": "56 pedidos",
+        "badgeVariant": "warning",
+        "note": "42 ent · 8 prep · 6 novos"
+      },
+      {
+        "label": "Cancelamento",
+        "value": "0.2%",
+        "badge": "Excelente",
+        "badgeVariant": "teal",
+        "note": "Apenas 1 cancelamento"
+      }
+    ],
+    "chart": {
+      "hours": ["11h", "12h", "13h", "14h", "17h", "18h", "19h", "20h", "21h", "22h", "23h"],
+      "values": [2, 5, 4, 3, 6, 8, 12, 18, 11, 7, 4],
+      "peakIndex": 7
+    },
+    "shift": {
+      "deliveredCount": 42,
+      "goal": {
+        "label": "Meta do Turno",
+        "percent": 82,
+        "caption": "R$ 3.840,00",
+        "target": "Alvo: R$ 4.500,00"
+      },
+      "topItems": [
+        { "rank": 1, "name": "Pizza Calabresa Especial", "qty": "24 un", "revenue": "R$ 1.029,60" },
+        { "rank": 2, "name": "Hambúrguer Bella Bacon", "qty": "16 un", "revenue": "R$ 478,40" },
+        { "rank": 3, "name": "Frango com Catupiry", "qty": "12 un", "revenue": "R$ 562,80" }
+      ],
+      "deliverers": [
+        {
+          "initials": "CE",
+          "name": "Carlos Eduardo",
+          "deliveries": "14 entregas",
+          "avgTime": "22 min méd",
+          "status": "Retornando da rota",
+          "tone": "positive"
+        },
+        {
+          "initials": "MS",
+          "name": "Marcos Souza",
+          "deliveries": "12 entregas",
+          "avgTime": "26 min méd",
+          "status": "Em entrega (#1048)",
+          "tone": "warning"
+        }
+      ]
+    }
+  },
+  "finance": {
+    "metrics": [
+      {
+        "id": "1",
+        "title": "Faturamento Bruto",
+        "amount": "R$ 34.890,00",
+        "subtitle": "vs. mês anterior",
+        "badge": { "text": "+14.2%", "variant": "success" }
+      },
+      {
+        "id": "2",
+        "title": "Ticket Médio",
+        "amount": "R$ 54,20",
+        "subtitle": "Média consolidada",
+        "highlight": "644 pedidos"
+      },
+      {
+        "id": "3",
+        "title": "Economia em Taxas",
+        "amount": "R$ 4.200,00",
+        "subtitle": "Sem comissões abusivas",
+        "badge": { "text": "1.2% méd.", "variant": "warning" }
+      }
+    ],
+    "transactions": [
+      {
+        "id": "1",
+        "orderNumber": "#1048",
+        "title": "Pedido #1048",
+        "subtitle": "Pix Instantâneo · Cardápio Web",
+        "code": "COD: BM-2391-2329",
+        "date": "24 Out 2026, 19:42",
+        "status": "Liberado",
+        "amount": "R$ 89,80",
+        "typeIcon": "bag",
+        "iconBg": "bg-amber-100 text-amber-600",
+        "details": {
+          "channel": "Cardápio Bella Massa (Web App)",
+          "channelSub": "Canal Próprio Direto • Sem comissão de app",
+          "customerName": "João Silva",
+          "customerAddress": "Rua das Flores, 120, Apto 402 - Bairro Jardim",
+          "paymentMix": { "pix": 62, "card": 28, "cash": 10 },
+          "liquidationStatus": [
+            { "label": "Disponível para Transferência", "sub": "Saldo liberado para Pix imediato", "time": "20:00", "status": "completed" },
+            { "label": "Liquidação Instantânea Pix", "sub": "Autenticação Bancária Efetuada", "time": "19:42", "status": "completed" },
+            { "label": "Pedido Realizado & Pago", "sub": "Checkout Web Bella Massa", "time": "19:42", "status": "completed" }
+          ],
+          "grossValue": "R$ 89,80",
+          "fee": "- R$ 0,89",
+          "deliveryFee": "Grátis",
+          "netValue": "R$ 88,91"
+        }
+      },
+      {
+        "id": "2",
+        "orderNumber": "#1047",
+        "title": "Pedido #1047",
+        "subtitle": "Cartão de Crédito (Visa) · Mesa 04",
+        "code": "COD: BM-2391-2330",
+        "date": "24 Out 2026, 19:38",
+        "status": "A compensar (D+1)",
+        "amount": "R$ 62,90",
+        "typeIcon": "bike",
+        "iconBg": "bg-emerald-100 text-emerald-600",
+        "details": {
+          "channel": "Mesa 04 (Salão)",
+          "channelSub": "Atendimento Local",
+          "customerName": "Mesa 04",
+          "customerAddress": "Consumo no local",
+          "paymentMix": { "pix": 0, "card": 100, "cash": 0 },
+          "liquidationStatus": [
+            { "label": "A compensar (D+1)", "sub": "Aguardando repasse da credenciadora", "time": "Amanhã", "status": "pending" },
+            { "label": "Transação Aprovada", "sub": "Cartão de Crédito Visa", "time": "19:38", "status": "completed" }
+          ],
+          "grossValue": "R$ 62,90",
+          "fee": "- R$ 1,88",
+          "deliveryFee": "N/A",
+          "netValue": "R$ 61,02"
+        }
+      },
+      {
+        "id": "3",
+        "orderNumber": "#1046",
+        "title": "Pedido #1046",
+        "subtitle": "Cartão Débito (Mastercard) · Entrega",
+        "code": "COD: BM-2391-2328",
+        "date": "24 Out 2026, 19:15",
+        "status": "Liberado",
+        "amount": "R$ 45,00",
+        "typeIcon": "card",
+        "iconBg": "bg-teal-100 text-teal-600",
+        "details": {
+          "channel": "Delivery Direto App",
+          "channelSub": "Pedido por Aplicativo",
+          "customerName": "Maria Oliveira",
+          "customerAddress": "Av. Brasil, 450 - Centro",
+          "paymentMix": { "pix": 0, "card": 100, "cash": 0 },
+          "liquidationStatus": [
+            { "label": "Disponível para Transferência", "sub": "Saldo liberado", "time": "19:30", "status": "completed" },
+            { "label": "Transação Aprovada", "sub": "Débito Maquininha", "time": "19:15", "status": "completed" }
+          ],
+          "grossValue": "R$ 45,00",
+          "fee": "- R$ 0,90",
+          "deliveryFee": "R$ 7,00",
+          "netValue": "R$ 44,10"
+        }
+      },
+      {
+        "id": "4",
+        "orderNumber": "#1045",
+        "title": "Pedido #1045",
+        "subtitle": "Pix Instantâneo · Delivery Direto",
+        "code": "COD: BM-2391-2325",
+        "date": "24 Out 2026, 18:50",
+        "status": "Liberado",
+        "amount": "R$ 96,00",
+        "typeIcon": "bag",
+        "iconBg": "bg-amber-100 text-amber-600",
+        "details": {
+          "channel": "Delivery Direto Web",
+          "channelSub": "Canal Próprio Direto",
+          "customerName": "Carlos Eduardo",
+          "customerAddress": "Rua das Palmeiras, 88 - Apt 12",
+          "paymentMix": { "pix": 100, "card": 0, "cash": 0 },
+          "liquidationStatus": [
+            { "label": "Disponível para Transferência", "sub": "Saldo liberado para Pix imediato", "time": "18:55", "status": "completed" }
+          ],
+          "grossValue": "R$ 96,00",
+          "fee": "- R$ 0,96",
+          "deliveryFee": "Grátis",
+          "netValue": "R$ 95,04"
+        }
+      },
+      {
+        "id": "5",
+        "title": "Tarifa de Gateway / Taxa Pix",
+        "subtitle": "Taxa reduzida Bella Massa (0.99%)",
+        "code": "TX - GATE - 8819",
+        "date": "24 Out 2026, 18:00",
+        "status": "Processado",
+        "amount": "- R$ 1,20",
+        "isNegative": true,
+        "typeIcon": "minus",
+        "iconBg": "bg-gray-100 text-gray-500"
+      },
+      {
+        "id": "6",
+        "title": "Repasse Semanal Automático",
+        "subtitle": "Transferência para Conta Itaú PJ",
+        "code": "TED #098192 - ITAU",
+        "date": "21 Out 2026, 10:00",
+        "status": "Transferido",
+        "amount": "R$ 5.340,00",
+        "typeIcon": "card",
+        "iconBg": "bg-emerald-100 text-emerald-600"
+      }
+    ]
+  },
+  "fiscal": {
+    "metrics": [
+      {
+        "id": "1",
+        "title": "FATURAMENTO DECLARADO",
+        "amount": "R$ 34.890,00",
+        "badge": { "text": "644 NFC-e autorizadas", "variant": "success" }
+      },
+      {
+        "id": "2",
+        "title": "SIMPLES NACIONAL (EST.)",
+        "amount": "R$ 1.570,05",
+        "badge": { "text": "Alíquota efetiva 4,5%", "variant": "warning" }
+      },
+      {
+        "id": "3",
+        "title": "ICMS / SUB. TRIBUTÁRIA",
+        "amount": "R$ 0,00",
+        "subtitle": "Itens de Padaria/Pizzaria (ST)"
+      },
+      {
+        "id": "4",
+        "title": "ECONOMIA TRIBUTÁRIA",
+        "amount": "R$ 3.837,90",
+        "subtitle": "Sem comissões retidas",
+        "badge": { "text": "Sem comissões retidas", "variant": "success" }
+      }
+    ],
+    "documents": [
+      {
+        "id": "1",
+        "docNumber": "#004921",
+        "title": "NFC-e #004921",
+        "subtitle": "Pedido #1048 · Consumidor Final",
+        "chave": "CHAVE: 2926 1004 8821 0001 9283 ...",
+        "date": "24 Out 2026, 19:43",
+        "status": "Autorizada SEFAZ",
+        "amount": "R$ 89,80",
+        "iconType": "receipt",
+        "details": {
+          "nfcNumber": "#004921",
+          "linkedOrder": "#1048",
+          "destinatario": "Consumidor Final",
+          "cliente": "João Silva",
+          "cpf": "***.492.105-**",
+          "totalProdutos": "R$ 89,80",
+          "baseCalculoICMS": "R$ 0,00",
+          "regimeTributario": "Simples Nacional (ME)",
+          "tributosAprox": "R$ 14,20",
+          "tributosPercentage": "15,8%",
+          "totalFiscal": "R$ 89,80"
+        }
+      },
+      {
+        "id": "2",
+        "docNumber": "#004920",
+        "title": "NFC-e #004920",
+        "subtitle": "Pedido #1047 · Mesa 04",
+        "chave": "CHAVE: 2926 1004 8821 0001 9282 ...",
+        "date": "24 Out 2026, 19:39",
+        "status": "Autorizada SEFAZ",
+        "amount": "R$ 62,90",
+        "iconType": "receipt",
+        "details": {
+          "nfcNumber": "#004920",
+          "linkedOrder": "#1047",
+          "destinatario": "Mesa 04",
+          "cliente": "Cliente Salão",
+          "cpf": "Não informado",
+          "totalProdutos": "R$ 62,90",
+          "baseCalculoICMS": "R$ 0,00",
+          "regimeTributario": "Simples Nacional (ME)",
+          "tributosAprox": "R$ 9,93",
+          "tributosPercentage": "15,8%",
+          "totalFiscal": "R$ 62,90"
+        }
+      },
+      {
+        "id": "3",
+        "docNumber": "#004919",
+        "title": "NFC-e #004919",
+        "subtitle": "Pedido #1046 · Entrega",
+        "chave": "CHAVE: 2926 1004 8821 0001 9281 ...",
+        "date": "24 Out 2026, 19:16",
+        "status": "Autorizada SEFAZ",
+        "amount": "R$ 45,00",
+        "iconType": "receipt",
+        "details": {
+          "nfcNumber": "#004919",
+          "linkedOrder": "#1046",
+          "destinatario": "Consumidor Final",
+          "cliente": "Maria Oliveira",
+          "cpf": "***.112.980-**",
+          "totalProdutos": "R$ 45,00",
+          "baseCalculoICMS": "R$ 0,00",
+          "regimeTributario": "Simples Nacional (ME)",
+          "tributosAprox": "R$ 7,11",
+          "tributosPercentage": "15,8%",
+          "totalFiscal": "R$ 45,00"
+        }
+      },
+      {
+        "id": "4",
+        "docNumber": "#004918",
+        "title": "NFC-e #004918",
+        "subtitle": "Pedido #1045 · Delivery Direto",
+        "chave": "CHAVE: 2926 1004 8821 0001 9280 ...",
+        "date": "24 Out 2026, 18:51",
+        "status": "Autorizada SEFAZ",
+        "amount": "R$ 96,00",
+        "iconType": "receipt",
+        "details": {
+          "nfcNumber": "#004918",
+          "linkedOrder": "#1045",
+          "destinatario": "Consumidor Final",
+          "cliente": "Carlos Eduardo",
+          "cpf": "***.883.210-**",
+          "totalProdutos": "R$ 96,00",
+          "baseCalculoICMS": "R$ 0,00",
+          "regimeTributario": "Simples Nacional (ME)",
+          "tributosAprox": "R$ 15,16",
+          "tributosPercentage": "15,8%",
+          "totalFiscal": "R$ 96,00"
+        }
+      },
+      {
+        "id": "5",
+        "title": "Lote Mensal Contábil - Setembro 2026",
+        "subtitle": "Arquivo ZIP com XMLs e DANFEs Consolidadas",
+        "chave": "612 Docs Fiscais Validados",
+        "date": "01 Out 2026, 08:30",
+        "status": "Enviado ao Contador",
+        "amount": "R$ 31.200,00",
+        "iconType": "folder",
+        "isLote": true
+      }
+    ]
+  }
+}

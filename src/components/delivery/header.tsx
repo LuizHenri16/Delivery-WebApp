@@ -8,7 +8,7 @@ import { HeaderNav } from "./header/HeaderNav";
 export function Header() {
     return (
         <header className="w-full bg-white/90">
-            <div className="flex items-center justify-between px-10 py-3">
+            <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 py-3">
                 <div className="flex items-center gap-3">
                     <div className="w-28">
                         <Image
